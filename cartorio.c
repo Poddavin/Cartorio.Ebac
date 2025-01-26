@@ -123,13 +123,14 @@ int main()
 	{
 	    system("cls");	
 	
-        setlocale(LC_ALL, "Portuguese"); //Inicio do Menu
+        setlocale(LC_ALL, "Portuguese"); //Definindo a linguagem 
 	
-    	printf("\t\t\t\t\t\t### Cartório Eleitoral ### \n\n");
+    	printf("\t\t\t\t\t\t### Cartório Eleitoral ### \n\n");//Inicio do Menu
     	printf("\tEscolha a opção desejada abaixo:\n\n");
     	printf("\t\t1 - Registrar nomes\n");
     	printf("\t\t2 - Consultar nomes\n");
     	printf("\t\t3 - Deletar nomes\n\n"); //Fim do Menu
+    	printf("\t\t4 - Sair do sistema\n\n");
     	printf("\tColoque a numeração da opção desejada:"); //Visual para o usuário
 	
     	scanf("%d" ,&opcao); //Armazenando escolhas do usuário
@@ -149,6 +150,11 @@ int main()
 		case 3:
 		deletar();
 		break;
+		
+		case 4:
+		printf("obrigado por utilizar o sistema!\n");
+		return 0;
+		break;	
 		
 		default:
 		printf("\t\t\t\t\t\t*Essa opção não está disponível!*\n");
